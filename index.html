@@ -20,7 +20,7 @@
   <body>
     <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light px-0">
           <a class="navbar-brand" href="#"
             ><img src="img/logo.png" alt="Techforing Logo"
           /></a>
@@ -39,10 +39,20 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a
+                  class="nav-link"
+                  href="https://techforing.com/company-overview/"
+                  target="_blank"
+                  >About Us</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a
+                  class="nav-link"
+                  href="https://techforing.com/contact-us/"
+                  target="_blank"
+                  >Contact Us</a
+                >
               </li>
             </ul>
           </div>
@@ -76,16 +86,23 @@
             </p>
             <ul class="vaf-list">
               <li><i class="fas fa-check-circle"></i>Cross-site-scripting</li>
-              <li><i class="fas fa-check-circle"></i>
-                Directory Traversal</li>
+              <li><i class="fas fa-check-circle"></i> Directory Traversal</li>
               <li><i class="fas fa-check-circle"></i>Clickjacking</li>
               <li><i class="fas fa-check-circle"></i>Email spoofing</li>
-              <li><i class="fas fa-check-circle"></i>Sensitive file disclosure</li>
+              <li>
+                <i class="fas fa-check-circle"></i>Sensitive file disclosure
+              </li>
               <li><i class="fas fa-check-circle"></i>API key finding</li>
               <li><i class="fas fa-check-circle"></i>HTML injection</li>
               <li><i class="fas fa-check-circle"></i>Banner grabbing</li>
-              <li><i class="fas fa-check-circle"></i>SSL Certificate Security Testing</li>
-              <li><i class="fas fa-check-circle"></i>Vulnerable Port and Service Detection</li>
+              <li>
+                <i class="fas fa-check-circle"></i>SSL Certificate Security
+                Testing
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>Vulnerable Port and Service
+                Detection
+              </li>
             </ul>
           </div>
           <div class="col-md-6">
@@ -441,7 +458,16 @@
               </div>
               <div class="vaf-group">
                 <label for="message">Message</label>
-                <textarea name="message" id="msg"></textarea>
+                <textarea name="message" id="msg" placeholder="Please write here more information that might would help us to determine your eligibility."></textarea>
+              </div>
+              <div class="vaf-group">
+                <input
+                  type="checkbox"
+                  id="newsletter"
+                  name="newsletter"
+                  value="newsletter"
+                />
+                <label for="newsletter" class="newsletter">Yes, I would also like to sign up for the promotional offers & newsletter.</label><br />
               </div>
               <button type="submit" name="submit">Send</button>
             </form>
